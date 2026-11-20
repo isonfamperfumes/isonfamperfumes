@@ -83,21 +83,6 @@ body {
         opacity 0.3s ease;
 }
 
-/* Navigation */
-.navbar nav {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-}
-
-.navbar nav a,
-.navbar nav summary {
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-    font-size: 15px;
-}
-
 /* Collections Dropdown */
 .dropdown {
     position: relative;
