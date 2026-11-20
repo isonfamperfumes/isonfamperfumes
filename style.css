@@ -131,7 +131,7 @@ body {
 
 /* DROPDOWN LINKS */
 .dropdown-menu a {
-    color: #000000;
+    color: #ffffff;
     padding: 12px 15px;
     display: block;
     white-space: nowrap;
@@ -148,7 +148,7 @@ body {
 /* OTHER NAVIGATION CLASSES */
 .dark-logo,
 .dark-link {
-    color: #ffffff;
+    color: #000000;
 }
 
 /* ==========================================
