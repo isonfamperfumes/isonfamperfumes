@@ -23,6 +23,7 @@ body {
     line-height: 1.6;
 }
 
+
 /* ==========================================
    NAVIGATION
 ========================================== */
@@ -39,11 +40,11 @@ body {
     z-index: 100;
 }
 
+/* LOGO */
 .logo {
     display: flex;
     align-items: center;
     gap: 10px;
-
     color: #ffffff;
     text-decoration: none;
 }
@@ -51,60 +52,72 @@ body {
 .logo img {
     width: 32px;
     height: 32px;
-
     object-fit: contain;
     display: block;
 }
 
 .logo span {
     color: #ffffff;
-
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 4px;
-
     text-decoration: none;
 }
 
+/* NAVIGATION LINKS */
 .navbar nav {
     display: flex;
+    align-items: center;
     gap: 30px;
 }
 
-.navbar nav a {
+.navbar nav a,
+.navbar nav summary {
     color: #ffffff;
     text-decoration: none;
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 2px;
     text-transform: uppercase;
-    transition:
-        color 0.3s ease,
-        opacity 0.3s ease;
+    cursor: pointer;
+
+    transition: color 0.3s ease;
 }
 
-/* Collections Dropdown */
+/* HOVER EFFECT */
+.navbar nav a:hover,
+.navbar nav summary:hover {
+    color: #bf0000;
+}
+
+/* ACTIVE LINK */
+.navbar nav a.active {
+    color: #ffffff;
+}
+
+/* ==========================================
+   COLLECTIONS DROPDOWN
+========================================== */
+
 .dropdown {
     position: relative;
 }
 
 .dropdown summary {
     list-style: none;
-    cursor: pointer;
 }
 
-/* Remove default dropdown arrow */
 .dropdown summary::-webkit-details-marker {
     display: none;
 }
 
-/* Dropdown Menu */
+/* DROPDOWN MENU */
 .dropdown-menu {
     position: absolute;
     top: 100%;
     left: 0;
-    min-width: 150px;
-    background: white;
+    min-width: 180px;
+    background: #400000;
     padding: 10px 0;
     display: flex;
     flex-direction: column;
@@ -112,39 +125,28 @@ body {
     z-index: 1000;
 }
 
-/* Hide dropdown when closed */
 .dropdown:not([open]) .dropdown-menu {
     display: none;
 }
 
-/* Dropdown Links */
+/* DROPDOWN LINKS */
 .dropdown-menu a {
-    padding: 10px 15px;
+    color: #ffffff;
+    padding: 12px 15px;
     display: block;
     white-space: nowrap;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    transition: color 0.3s ease;
 }
 
 .dropdown-menu a:hover {
-    background: #f5f5f5;
-}
-
-.navbar nav a:hover {
     color: #bf0000;
-    opacity: 1;
+    background: transparent;
 }
 
-.navbar nav a:hover {
-    opacity: .5;
-}
-
-.navbar nav a.active {
-    color: #bf0000;
-}
-
-.dark-logo {
-    color: #ffffff;
-}
-
+/* OTHER NAVIGATION CLASSES */
+.dark-logo,
 .dark-link {
     color: #ffffff;
 }
