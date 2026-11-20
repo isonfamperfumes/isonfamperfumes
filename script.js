@@ -42,7 +42,7 @@ const scents = {
             "powdery • floral • rose",
 
         baseNotes:
-            "woody • violey",
+            "woody • violet",
 
         inspiration:
             "Blanche",
@@ -78,7 +78,7 @@ const scents = {
             "fresh spicy • woody • green",
 
         baseNotes:
-            "floral • powdery • citrusy",
+            "floral • powdery • citrus",
 
         inspiration:
             "Ameerat Al Arab",
@@ -447,7 +447,7 @@ function renderCollection() {
                     <p class="eyebrow dark">
                         ${collection === "dubai"
                             ? "DUBAI SCENTS"
-                            : "PREMIUM SCENTS"}
+                            : "SIGNATURE SCENTS"}
                     </p>
 
 
